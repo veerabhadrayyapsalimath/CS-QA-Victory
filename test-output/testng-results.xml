@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27468" started-at="2017-09-07T08:08:18Z" finished-at="2017-09-07T08:08:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27468" started-at="2017-09-07T08:08:18Z" finished-at="2017-09-07T08:08:45Z">
+      <class name="script.dickblick">
+        <test-method status="PASS" signature="setProperty()[pri:0, instance:script.dickblick@ff5b51f]" name="setProperty" is-config="true" duration-ms="11" started-at="2017-09-07T13:38:18Z" finished-at="2017-09-07T13:38:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProperty -->
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.dickblick@ff5b51f]" name="openSite" is-config="true" duration-ms="14824" started-at="2017-09-07T13:38:18Z" finished-at="2017-09-07T13:38:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method status="PASS" signature="mm()[pri:0, instance:script.dickblick@ff5b51f]" name="mm" duration-ms="12626" started-at="2017-09-07T13:38:32Z" finished-at="2017-09-07T13:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mm -->
+      </class> <!-- script.dickblick -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
