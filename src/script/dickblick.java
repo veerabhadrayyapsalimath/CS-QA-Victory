@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import generic.AutoUtility;
@@ -43,10 +44,13 @@ public class dickblick extends BaseTest {
 		String secondpop = allpop1.get(0).getText();
 		log.info(secondpop);
 
-		if (secondpop.contentEquals(firstpop)) {
+			if (secondpop.contentEquals(firstpop)) {
+
 			log.info("-----Testcase 22 Result: popular products are matching::-----FAIL");
 
-		} else {
+		}
+	else 
+	{
 			log.info("-----Testcase 22 Result: Popular products are not matching::-----PASS");
 		}
 
