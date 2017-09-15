@@ -4,13 +4,13 @@
   <test name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="script.Keywordriven">
+      <class name="script.dickblick">
         <methods>
-          <include name="getExcel"/>
+          <include name="mm"/>
           <include name="setProperty"/>
           <include name="openSite"/>
         </methods>
-      </class> <!-- script.Keywordriven -->
+      </class> <!-- script.dickblick -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

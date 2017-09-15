@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26933" started-at="2017-09-10T13:25:31Z" finished-at="2017-09-10T13:25:58Z">
+  <suite name="Suite" duration-ms="34467" started-at="2017-09-15T06:06:46Z" finished-at="2017-09-15T06:07:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26933" started-at="2017-09-10T13:25:31Z" finished-at="2017-09-10T13:25:58Z">
-      <class name="script.Keywordriven">
-        <test-method status="PASS" signature="setProperty()[pri:0, instance:script.Keywordriven@ff5b51f]" name="setProperty" is-config="true" duration-ms="11" started-at="2017-09-10T18:55:31Z" finished-at="2017-09-10T18:55:31Z">
+    <test name="Test" duration-ms="34467" started-at="2017-09-15T06:06:46Z" finished-at="2017-09-15T06:07:20Z">
+      <class name="script.dickblick">
+        <test-method status="PASS" signature="setProperty()[pri:0, instance:script.dickblick@ff5b51f]" name="setProperty" is-config="true" duration-ms="17" started-at="2017-09-15T11:36:46Z" finished-at="2017-09-15T11:36:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setProperty -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.Keywordriven@ff5b51f]" name="openSite" is-config="true" duration-ms="15575" started-at="2017-09-10T18:55:31Z" finished-at="2017-09-10T18:55:47Z">
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.dickblick@ff5b51f]" name="openSite" is-config="true" duration-ms="18731" started-at="2017-09-15T11:36:46Z" finished-at="2017-09-15T11:37:05Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="getExcel()[pri:0, instance:script.Keywordriven@ff5b51f]" name="getExcel" duration-ms="11339" started-at="2017-09-10T18:55:47Z" finished-at="2017-09-10T18:55:58Z">
+        <test-method status="PASS" signature="mm()[pri:0, instance:script.dickblick@ff5b51f]" name="mm" duration-ms="15714" started-at="2017-09-15T11:37:05Z" finished-at="2017-09-15T11:37:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getExcel -->
-      </class> <!-- script.Keywordriven -->
+        </test-method> <!-- mm -->
+      </class> <!-- script.dickblick -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
