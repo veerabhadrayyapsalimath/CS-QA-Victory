@@ -2,31 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34467" started-at="2017-09-15T06:06:46Z" finished-at="2017-09-15T06:07:20Z">
+  <suite name="Default suite" duration-ms="30049" started-at="2017-10-04T13:59:45Z" finished-at="2017-10-04T14:00:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="34467" started-at="2017-09-15T06:06:46Z" finished-at="2017-09-15T06:07:20Z">
-      <class name="script.dickblick">
-        <test-method status="PASS" signature="setProperty()[pri:0, instance:script.dickblick@ff5b51f]" name="setProperty" is-config="true" duration-ms="17" started-at="2017-09-15T11:36:46Z" finished-at="2017-09-15T11:36:46Z">
+    <test name="Default test" duration-ms="30049" started-at="2017-10-04T13:59:45Z" finished-at="2017-10-04T14:00:15Z">
+      <class name="script.AutosuggestAndInfield">
+        <test-method status="PASS" signature="EachLetter()[pri:1, instance:script.AutosuggestAndInfield@738dc9b]" name="EachLetter" duration-ms="30020" started-at="2017-10-04T19:29:45Z" finished-at="2017-10-04T19:30:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setProperty -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.dickblick@ff5b51f]" name="openSite" is-config="true" duration-ms="18731" started-at="2017-09-15T11:36:46Z" finished-at="2017-09-15T11:37:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="mm()[pri:0, instance:script.dickblick@ff5b51f]" name="mm" duration-ms="15714" started-at="2017-09-15T11:37:05Z" finished-at="2017-09-15T11:37:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mm -->
-      </class> <!-- script.dickblick -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- EachLetter -->
+      </class> <!-- script.AutosuggestAndInfield -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

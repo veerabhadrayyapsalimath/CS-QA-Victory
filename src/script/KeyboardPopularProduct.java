@@ -1,21 +1,33 @@
 package script;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import generic.BaseTest;
-
-public class KeyboardPopularProduct extends BaseTest {
+public class KeyboardPopularProduct {
+	static
+	{
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	}
 	@Test
-	public void popularProduct()
+	public void popularProduct() throws InterruptedException
 	{
 		
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.moodfabrics.com/");
-		driver.findElement(By.xpath("//input[@type='search']")).sendKeys("");
-	}
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://www.dickblick.com/");
+		driver.findElement(By.id("unbxd_q")).sendKeys("paper");
+		List<WebElement> all = driver.findElements(By.className("unbxd-as-keysuggestion"));
+int	b=	all.size();
+				System.out.println(b);
+	
+	
+			}
 	
 	
 }
+

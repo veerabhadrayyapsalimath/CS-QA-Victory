@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.Keywordriven">
+      <class name="script.AutosuggestAndInfield">
         <methods>
-          <include name="getExcel"/>
-          <include name="setProperty"/>
-          <include name="openSite"/>
+          <include name="EachLetter"/>
         </methods>
-      </class> <!-- script.Keywordriven -->
+      </class> <!-- script.AutosuggestAndInfield -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

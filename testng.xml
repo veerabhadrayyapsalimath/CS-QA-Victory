@@ -5,7 +5,7 @@
   <parameter name="browser" value="chrome">
   </parameter>
   <classes>
-   <class name="script.dickblick"/>
+   <class name="script.MaPbyMouse"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
