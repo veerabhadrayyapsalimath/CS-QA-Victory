@@ -19,32 +19,33 @@ import generic.Excel;
 
 //import org.apache.log4j.Logger;
 public class AutosuggestAndInfield extends BaseTest {
-	@Test(priority = 2)
+//SINGLE AND WITHSPACE QUERIES
+	@Test(priority = 1)
 	public void EachLetter() throws IOException, InterruptedException {
 
-		for (int i = 0; i <= 10; i++) {
+		for (int i = 0; i <= 7; i++) {
 			String y = Excel.getCellCalue(EXCEL_DATA, "Sheet3", i, 1);
 			System.out.println(y);
 
 			driver.findElement(By.xpath("//input[@id='search']")).sendKeys(y);
 			Thread.sleep(5000);
 			try {
-				String actul = driver.findElements(By.xpath("//li[@class='unbxd-as-header']")).get(1).getText();
-				System.out.println(actul);
-				String exp = "SUGGESTIONS";
-				String exp1 = "PRODUCTS";
+				List<WebElement> total = driver.findElements(By.xpath("//div[@class='unbxd-as-popular-product-info']"));
 
-				if (actul.contains(exp) | actul.contains(exp1)) {
-					System.out.println("Autosuggest Should display");
+				int totalSize = total.size();
+
+				if (totalSize > 0) {
+					System.out.println("Autosuggest is displayed");
 					System.out.println("Autosuggest Displaying for " + "y" + " letter :: PASS");
 					System.out.println("------------------------------------------------");
-				} else{
-					System.out.println("Autosuggest Should not display");
+				} else {
+					System.out.println("Autosuggest is displayed");
 					System.out.println("Autosuggest is not displaying for " + "y" + " word :: FAIL");
 					System.out.println("------------------------------------------------");
 				}
+
 			} catch (Exception e) {
-				System.out.println("Autosuggest Should not display");
+				System.out.println("Autosuggest is not displayed");
 				System.out.println("Autosuggest is not displaying for " + "y" + " word :: PASS");
 				System.out.println("------------------------------------------------");
 			}
@@ -53,38 +54,44 @@ public class AutosuggestAndInfield extends BaseTest {
 			driver.findElement(By.id("search")).clear();
 		}
 	}
-		
-		@Test(priority=1)
-		public void autoSuggestIsComingOrNot()
-		{
-			//li[@class='unbxd-as-keysuggestion']
-			driver.findElement(By.xpath("//input[@id='search']")).sendKeys("s");
-			String actul = driver.findElements(By.xpath("//li[@class='unbxd-as-header']")).get(1).getText();
-			System.out.println(actul);
-			String exp = "SUGGESTIONS";
-			String exp1 = "PRODUCTS";
+//WITHOUT SPACE QUERIES
+	@Test(priority = 2)
+	public void withoutspace() throws IOException, InterruptedException {
 
-			if (actul.contains(exp) | actul.contains(exp1)) 
-			{
-				System.out.println("Autosuggest Should display");
-				System.out.println("Autosuggest coming for " + "y" + " letter :: PASS");
+		for (int i = 8; i <= 10; i++) {
+			String y = Excel.getCellCalue(EXCEL_DATA, "Sheet3", i, 1);
+			System.out.println(y);
+
+			driver.findElement(By.xpath("//input[@id='search']")).sendKeys(y);
+			Thread.sleep(5000);
+			/*
+			 * try {
+			 */
+			List<WebElement> total = driver.findElements(By.xpath("//div[@class='unbxd-as-popular-product-info']"));
+
+			int totalSize = total.size();
+
+			if (totalSize > 0) {
+				System.out.println("Autosuggest is displayed");
+				System.out.println("Autosuggest is Displaying for " + y + " letter :: FAIL");
 				System.out.println("------------------------------------------------");
-		    }
-			else
-			{
-				System.out.println("Autosuggest Should not display");
-				System.out.println("Autosuggest is not coming for " + "y" + " word :: FAIL");
+			} else {
+				System.out.println("Autosuggest is displayed");
+				System.out.println("Autosuggest is not displaying for " + y + " word :: PASS");
 				System.out.println("------------------------------------------------");
 			}
-				
-			}
-		
-		@Test(priority=3)
-		public void keywordSuggestionIsCommingorNot()
-		{
-			driver.findElement(By.xpath("//input[@id='search']")).sendKeys("s");
-			
+
+			/*
+			 * } catch (Exception e) { System.out.println(
+			 * "Autosuggest is not displayed"); System.out.println(
+			 * "Autosuggest is not displaying for " + "y" + " word :: PASS");
+			 * System.out.println(
+			 * "------------------------------------------------"); }
+			 */
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("search")).clear();
 		}
-		
+	}
 
 }
