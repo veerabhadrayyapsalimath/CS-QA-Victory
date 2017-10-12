@@ -5,7 +5,9 @@
     <classes>
       <class name="script.AutosuggestAndInfield">
         <methods>
-          <include name="EachLetter"/>
+          <include name="autoSuggestIsComingOrNot"/>
+          <include name="setProperty"/>
+          <include name="openSite"/>
         </methods>
       </class> <!-- script.AutosuggestAndInfield -->
     </classes>
