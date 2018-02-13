@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.AutosuggestAndInfield">
+      <class name="script.CompleteSearch">
         <methods>
-          <include name="autoSuggestIsComingOrNot"/>
+          <include name="possibletowritetextinsidesearchbox"/>
           <include name="setProperty"/>
           <include name="openSite"/>
         </methods>
-      </class> <!-- script.AutosuggestAndInfield -->
+      </class> <!-- script.CompleteSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

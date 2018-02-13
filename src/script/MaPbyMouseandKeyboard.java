@@ -26,7 +26,7 @@ public class MaPbyMouseandKeyboard extends BaseTest {
 	String endResult3 = null;
 	String endResult4 = null;
 
-	@Test(priority = 1)
+	@Test(priority = 8)
 	public void popularProductMouse() throws InterruptedException {
 		log.info("--------------------Testcase 22 is Running-------------------");
 		driver.findElement(By.xpath(AutoUtility.getProperty(CONFIG_PROPERTY2, "popularproductxpath"))).clear();

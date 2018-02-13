@@ -2,6 +2,7 @@ package generic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
@@ -24,9 +25,9 @@ public long implicit;
 	}
 	@Parameters({"browser"})
 @BeforeMethod()
-public void openSite(@Optional("firefox")String browser)
+public void openSite(@Optional("chrome")String browser)
 {
-		driver=new ChromeDriver();
+		driver=new FirefoxDriver();
 		log.info("opening the browser");
 		driver.manage().window().maximize();
 		log.info("maximize the window");
@@ -37,5 +38,4 @@ String x=AutoUtility.getProperty(CONFIG_PROPERTY, "implicit");
 long implicitw= Long.parseLong(x);
 driver.manage().timeouts().implicitlyWait(implicitw, TimeUnit.SECONDS);
 }
-	
 }

@@ -2,15 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="script.dickblick">
+      <class name="script.AutosuggestAndInfield2">
         <methods>
-          <include name="mm"/>
+          <include name="EachLetter"/>
+          <include name="keywordWithSearchButton"/>
           <include name="setProperty"/>
+          <include name="spaceandEnter"/>
+          <include name="withoutspace"/>
+          <include name="autoSuggestIsComingOrNot"/>
+          <include name="keywordSuggestionIsCommingorNot"/>
+          <include name="keywordWithEnterButton"/>
           <include name="openSite"/>
         </methods>
-      </class> <!-- script.dickblick -->
+      </class> <!-- script.AutosuggestAndInfield2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
-  <parameter name="browser" value="chrome">
+  <test name="SearchModule">
+  <parameter name="browser" value="firefox">
   </parameter>
   <classes>
-   <class name="script.AutosuggestAndInfield"/>
+   <class name="script.CompleteSearchModule"/>
+  </classes>
+  </test>
+  <test name="Autosuggest">
+  <classes>
+  <class name="script.CompleteAutosuggestModule"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
