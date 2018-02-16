@@ -3,13 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.CompleteSearch">
+      <class name="script.CompleteAutosuggestModule">
         <methods>
-          <include name="possibletowritetextinsidesearchbox"/>
+          <include name="popularProductMouse"/>
+          <include name="infield2"/>
+          <include name="keywordSuggestionIsCommingorNot"/>
+          <include name="withoutspace"/>
+          <include name="autoSuggestIsComingOrNot"/>
+          <include name="infield3"/>
+          <include name="popularproductavailableornot"/>
+          <include name="popularproductclickandprice"/>
+          <include name="spaceandEnter"/>
+          <include name="infield"/>
+          <include name="keywordWithEnterButton"/>
           <include name="setProperty"/>
+          <include name="popualrProductpriceCheck"/>
+          <include name="EachLetter"/>
+          <include name="keywordWithSearchButton"/>
           <include name="openSite"/>
         </methods>
-      </class> <!-- script.CompleteSearch -->
+      </class> <!-- script.CompleteAutosuggestModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

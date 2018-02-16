@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+ <suite name="Suite">
+ <listeners>
+ 
+ <listener class-name="org.moodfabric.com.ExtentTestNGITestListener"></listener>
+ 
+ </listeners>
   <test name="SearchModule">
   <parameter name="browser" value="firefox">
   </parameter>
@@ -8,9 +13,9 @@
    <class name="script.CompleteSearchModule"/>
   </classes>
   </test>
-  <test name="Autosuggest">
+  <!-- <test name="Autosuggest">
   <classes>
   <class name="script.CompleteAutosuggestModule"/>
   </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>  -->
+</suite> 

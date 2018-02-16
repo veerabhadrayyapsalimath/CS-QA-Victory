@@ -18,5 +18,6 @@
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.4.0.jar"/>
 	<classpathentry kind="lib" path="jar/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="D:/OWN/javax.mail-api-1.5.5.jar"/>
+	<classpathentry kind="lib" path="D:/OWN/BTM/extentreports-3.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -17,7 +18,8 @@ public class BaseTest implements AllPath {
 	public Logger log = Logger.getLogger(this.getClass());
 	public String strUrl;
 public long implicit;
-	@BeforeSuite
+//@Listeners(generic.ExtentTestNGITestListener)
+@BeforeSuite
 	public void setProperty()
 	{
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
@@ -26,7 +28,8 @@ public long implicit;
 	@Parameters({"browser"})
 @BeforeMethod()
 public void openSite(@Optional("chrome")String browser)
-{
+{    
+		 //driver = new ChromeDriver();
 		driver=new FirefoxDriver();
 		log.info("opening the browser");
 		driver.manage().window().maximize();
