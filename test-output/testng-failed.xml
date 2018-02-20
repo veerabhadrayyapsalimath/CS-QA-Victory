@@ -3,26 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="script.CompleteAutosuggestModule">
+      <class name="testcase.org.CompleteAutosuggestModule">
         <methods>
-          <include name="popularProductMouse"/>
-          <include name="infield2"/>
-          <include name="keywordSuggestionIsCommingorNot"/>
-          <include name="withoutspace"/>
-          <include name="autoSuggestIsComingOrNot"/>
-          <include name="infield3"/>
-          <include name="popularproductavailableornot"/>
-          <include name="popularproductclickandprice"/>
-          <include name="spaceandEnter"/>
-          <include name="infield"/>
           <include name="keywordWithEnterButton"/>
-          <include name="setProperty"/>
-          <include name="popualrProductpriceCheck"/>
-          <include name="EachLetter"/>
+          <include name="popularproductavailableornot"/>
+          <include name="spaceandEnter"/>
+          <include name="infield2"/>
+          <include name="infield"/>
           <include name="keywordWithSearchButton"/>
+          <include name="popualrProductpriceCheck"/>
+          <include name="keywordSuggestionIsCommingorNot"/>
+          <include name="infield3"/>
+          <include name="popularProductMouse"/>
+          <include name="withoutspace"/>
+          <include name="setProperty"/>
+          <include name="popularproductclickandprice"/>
           <include name="openSite"/>
         </methods>
-      </class> <!-- script.CompleteAutosuggestModule -->
+      </class> <!-- testcase.org.CompleteAutosuggestModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

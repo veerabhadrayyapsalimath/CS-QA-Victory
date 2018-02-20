@@ -18,7 +18,6 @@ public class BaseTest implements AllPath {
 	public Logger log = Logger.getLogger(this.getClass());
 	public String strUrl;
 public long implicit;
-//@Listeners(generic.ExtentTestNGITestListener)
 @BeforeSuite
 	public void setProperty()
 	{
@@ -29,8 +28,8 @@ public long implicit;
 @BeforeMethod()
 public void openSite(@Optional("chrome")String browser)
 {    
-		 //driver = new ChromeDriver();
-		driver=new FirefoxDriver();
+		 driver = new ChromeDriver();
+		//driver=new FirefoxDriver();
 		log.info("opening the browser");
 		driver.manage().window().maximize();
 		log.info("maximize the window");

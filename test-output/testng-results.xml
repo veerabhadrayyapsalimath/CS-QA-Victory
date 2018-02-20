@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="766378" started-at="2018-02-15T13:41:48Z" finished-at="2018-02-15T13:54:35Z">
+  <suite name="Default suite" duration-ms="120964" started-at="2018-02-20T09:59:25Z" finished-at="2018-02-20T10:01:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="766378" started-at="2018-02-15T13:41:48Z" finished-at="2018-02-15T13:54:35Z">
-      <class name="script.CompleteAutosuggestModule">
-        <test-method status="PASS" signature="setProperty()[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="setProperty" is-config="true" duration-ms="14" started-at="2018-02-15T19:11:48Z" finished-at="2018-02-15T19:11:48Z">
+    <test name="Default test" duration-ms="120964" started-at="2018-02-20T09:59:25Z" finished-at="2018-02-20T10:01:26Z">
+      <class name="testcase.org.CompleteSearchModule">
+        <test-method status="PASS" signature="setProperty()[pri:0, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="setProperty" is-config="true" duration-ms="12" started-at="2018-02-20T15:29:25Z" finished-at="2018-02-20T15:29:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setProperty -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="105809" started-at="2018-02-15T19:11:48Z" finished-at="2018-02-15T19:13:34Z">
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="openSite" is-config="true" duration-ms="21882" started-at="2018-02-20T15:29:25Z" finished-at="2018-02-20T15:29:47Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="autoSuggestIsComingOrNot()[pri:1, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="autoSuggestIsComingOrNot" duration-ms="6372" started-at="2018-02-15T19:13:34Z" finished-at="2018-02-15T19:13:41Z">
+        <test-method status="PASS" signature="TestPlaceHolderIsPresentOrNot()[pri:12, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="TestPlaceHolderIsPresentOrNot" duration-ms="3284" started-at="2018-02-20T15:29:47Z" finished-at="2018-02-20T15:29:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- autoSuggestIsComingOrNot -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="34752" started-at="2018-02-15T19:13:41Z" finished-at="2018-02-15T19:14:15Z">
+        </test-method> <!-- TestPlaceHolderIsPresentOrNot -->
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="openSite" is-config="true" duration-ms="14748" started-at="2018-02-20T15:29:51Z" finished-at="2018-02-20T15:30:05Z">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="EachLetter()[pri:2, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="EachLetter" duration-ms="63175" started-at="2018-02-15T19:14:15Z" finished-at="2018-02-15T19:15:19Z">
+        <test-method status="PASS" signature="DontEnterAnyQueryandClickonSearchButton()[pri:13, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="DontEnterAnyQueryandClickonSearchButton" duration-ms="1821" started-at="2018-02-20T15:30:05Z" finished-at="2018-02-20T15:30:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EachLetter -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="56081" started-at="2018-02-15T19:15:19Z" finished-at="2018-02-15T19:16:15Z">
+        </test-method> <!-- DontEnterAnyQueryandClickonSearchButton -->
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="openSite" is-config="true" duration-ms="13645" started-at="2018-02-20T15:30:07Z" finished-at="2018-02-20T15:30:21Z">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="withoutspace()[pri:3, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="withoutspace" duration-ms="38936" started-at="2018-02-15T19:16:15Z" finished-at="2018-02-15T19:16:54Z">
+        <test-method status="PASS" signature="EnteredQueryShouldDisplayInSearchBox()[pri:14, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="EnteredQueryShouldDisplayInSearchBox" duration-ms="4160" started-at="2018-02-20T15:30:21Z" finished-at="2018-02-20T15:30:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- withoutspace -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="28323" started-at="2018-02-15T19:16:54Z" finished-at="2018-02-15T19:17:22Z">
+        </test-method> <!-- EnteredQueryShouldDisplayInSearchBox -->
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="openSite" is-config="true" duration-ms="12264" started-at="2018-02-20T15:30:25Z" finished-at="2018-02-20T15:30:37Z">
           <params>
             <param index="0">
               <value>
@@ -67,11 +67,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="keywordSuggestionIsCommingorNot()[pri:4, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="keywordSuggestionIsCommingorNot" duration-ms="3919" started-at="2018-02-15T19:17:22Z" finished-at="2018-02-15T19:17:26Z">
+        <test-method status="PASS" signature="TestWhetherSearchButtonIsWorking()[pri:15, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="TestWhetherSearchButtonIsWorking" duration-ms="24280" started-at="2018-02-20T15:30:37Z" finished-at="2018-02-20T15:31:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- keywordSuggestionIsCommingorNot -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="24810" started-at="2018-02-15T19:17:26Z" finished-at="2018-02-15T19:17:51Z">
+        </test-method> <!-- TestWhetherSearchButtonIsWorking -->
+        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="openSite" is-config="true" duration-ms="15662" started-at="2018-02-20T15:31:02Z" finished-at="2018-02-20T15:31:17Z">
           <params>
             <param index="0">
               <value>
@@ -82,146 +82,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="keywordWithEnterButton()[pri:5, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="keywordWithEnterButton" duration-ms="2848" started-at="2018-02-15T19:17:51Z" finished-at="2018-02-15T19:17:54Z">
+        <test-method status="PASS" signature="invalidDataIsWorkingAsPerTheExpectedOutput()[pri:16, instance:testcase.org.CompleteSearchModule@5702b3b1]" name="invalidDataIsWorkingAsPerTheExpectedOutput" duration-ms="9115" started-at="2018-02-20T15:31:17Z" finished-at="2018-02-20T15:31:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- keywordWithEnterButton -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="26517" started-at="2018-02-15T19:17:54Z" finished-at="2018-02-15T19:18:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="keywordWithSearchButton()[pri:6, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="keywordWithSearchButton" duration-ms="8383" started-at="2018-02-15T19:18:20Z" finished-at="2018-02-15T19:18:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- keywordWithSearchButton -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="28970" started-at="2018-02-15T19:18:28Z" finished-at="2018-02-15T19:18:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="spaceandEnter()[pri:7, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="spaceandEnter" duration-ms="13611" started-at="2018-02-15T19:18:57Z" finished-at="2018-02-15T19:19:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- spaceandEnter -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="26559" started-at="2018-02-15T19:19:11Z" finished-at="2018-02-15T19:19:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="popularproductavailableornot()[pri:8, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="popularproductavailableornot" duration-ms="2498" started-at="2018-02-15T19:19:38Z" finished-at="2018-02-15T19:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popularproductavailableornot -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="28070" started-at="2018-02-15T19:19:40Z" finished-at="2018-02-15T19:20:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="popualrProductpriceCheck()[pri:9, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="popualrProductpriceCheck" duration-ms="2958" started-at="2018-02-15T19:20:08Z" finished-at="2018-02-15T19:20:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popualrProductpriceCheck -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="39274" started-at="2018-02-15T19:20:11Z" finished-at="2018-02-15T19:20:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="popularproductclickandprice()[pri:10, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="popularproductclickandprice" duration-ms="11502" started-at="2018-02-15T19:20:50Z" finished-at="2018-02-15T19:21:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popularproductclickandprice -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="31184" started-at="2018-02-15T19:21:02Z" finished-at="2018-02-15T19:21:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="popularProductMouse()[pri:11, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="popularProductMouse" duration-ms="14184" started-at="2018-02-15T19:21:33Z" finished-at="2018-02-15T19:21:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- popularProductMouse -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="29860" started-at="2018-02-15T19:21:47Z" finished-at="2018-02-15T19:22:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="infield()[pri:12, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="infield" duration-ms="26438" started-at="2018-02-15T19:22:17Z" finished-at="2018-02-15T19:22:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infield -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="67560" started-at="2018-02-15T19:22:44Z" finished-at="2018-02-15T19:23:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="infield2()[pri:13, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="infield2" duration-ms="13939" started-at="2018-02-15T19:23:51Z" finished-at="2018-02-15T19:24:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infield2 -->
-        <test-method status="PASS" signature="openSite(java.lang.String)[pri:0, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="openSite" is-config="true" duration-ms="25416" started-at="2018-02-15T19:24:05Z" finished-at="2018-02-15T19:24:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method status="PASS" signature="infield3()[pri:14, instance:script.CompleteAutosuggestModule@25bbe1b6]" name="infield3" duration-ms="4200" started-at="2018-02-15T19:24:30Z" finished-at="2018-02-15T19:24:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infield3 -->
-      </class> <!-- script.CompleteAutosuggestModule -->
+        </test-method> <!-- invalidDataIsWorkingAsPerTheExpectedOutput -->
+      </class> <!-- testcase.org.CompleteSearchModule -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
